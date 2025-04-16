@@ -99,9 +99,9 @@ if (registerForm) {
                     localStorage.setItem("role", data.role);
 
                     if (data.role === "admin") {
-                        window.location.href = "/frontend/admin-dashboard.html";
+                        window.location.href = "/admin-dashboard.html";
                     } else {
-                        window.location.href = "/frontend/user-dashboard.html";
+                        window.location.href = "/user-dashboard.html";
                     }
                     document.getElementById("loginForm").reset();
                 } else {
