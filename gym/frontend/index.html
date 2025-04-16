@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter's Gym</title>
+    <link rel="icon" href="logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">Peter's <b>Gym</b></a>
+            <div class="toggle" onclick="navToggle()"></div>
+            <ul class="navbar-menu">
+                <li class="nav-list"><a href="#home-section" id="home-link" onclick="navToggle()">Home</a></li>
+                <li class="nav-list"><a href="#about" id="about-link" onclick="navToggle()">About Us</a></li>
+                <li class="nav-list"><a href="#service" onclick="navToggle()">Blog</a></li>
+                <li class="nav-list"><a href="#membership" id="membership-link" onclick="navToggle()">Membership</a>
+                </li>
+                <li class="nav-list"><a href="#trainer" onclick="navToggle()">Trainers</a></li>
+                <li class="nav-list"><a href="#diet" onclick="navToggle()">Diet</a></li>
+                <!-- <li class="nav-list"><a href="#contact" onclick="navToggle()">Contact Us</a></li> -->
+                <li class="nav-list"><a href="gallery.html" onclick="navToggle()">Gallery</a></li>
+                <a href="#contact"><button class="btn">Join Us</button></a>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Home Section -->
+
+    <section id="home-section" class="home-sec view">
+        <div class="highlights">
+            <h3>Feel the power with</h3>
+            <h1><b>Peter's </b> Gym</h1><br>
+            <p class="tagline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eos ab nisi impedit
+                eum minus.</p>
+            <a href="#register"> <button class="register">Register Now</button></a>
+        </div>
+        <div class="bg-image"></div>
+    </section>
+
+
+    <!-- About Section -->
+
+    <section id="about" class="about-section view">
+        <div class="main">
+            <h2><span>A</span>bout Us</h2>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, incidunt!</h5>
+        </div>
+        <div class="content">
+            <div class="col col1">
+                <p><b>L</b>orem ipsum dolor sit, amet consectetur adipisicing elit. In voluptatum eius, culpa enim
+                    voluptas ullam! Consequuntur voluptatem, quae saepe voluptatum minima veritatis dolorum maxime
+                    maiores, quasi aliquam provident delectus mollitia inventore magnam neque modi est distinctio
+                    corporis vitae animi? Dolorem doloribus nihil numquam officia repudiandae ducimus. Officiis in eaque
+                    voluptatem corporis dignissimos esse sit vero corrupti enim! Labore neque ut pariatur sint
+                    praesentium aut delectus excepturi placeat, illum blanditiis exercitationem perspiciatis. Ut quasi,
+                    eius at id aut animi optio dignissimos nostrum vel nulla, cum aperiam distinctio? Quidem obcaecati
+                    repudiandae cupiditate molestiae exercitationem ullam, maxime, perspiciatis ipsam, corrupti ut
+                    excepturi. Dolor!</p>
+                <a href="#">more</a>
+            </div>
+            <div class="col col2">
+                <div class="box">
+                    <img src="body.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section  -->
+
+    <section id="service" class="service-sec view">
+        <div class="main">
+            <h2><span>F</span>itness Tips and Advice</h2>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, harum voluptate?</h5>
+        </div>
+
+        <div class="content">
+            <div class="frame">
+                <div class="box">
+                    <img src="work1.jpg" alt="">
+                </div>
+                <div class="title">Workout Routines</div>
+                <p class="routine">various workout routines for different fitness levels, goals, and body parts.</p>
+            </div>
+
+            <div class="frame">
+                <div class="box">
+                    <img src="work2.jpg" alt="">
+                </div>
+                <div class="title">Exercise Techniques</div>
+                <p class="routine"> detailed guides on how to perform specific exercises correctly to avoid injuries and
+                    maximize benefits.</p>
+            </div>
+
+            <div class="frame">
+                <div class="box">
+                    <img src="work3.jpg" alt="">
+                </div>
+                <div class="title">Nutrition and Diet</div>
+                <p class="routine">Offer advice on healthy eating, meal planning, and recipes that complement workout
+                    routines.</p>
+            </div>
+            <div class="frame">
+                <div class="box">
+                    <img src="work4.jpg" alt="">
+                </div>
+                <div class="title">Fitness Gear</div>
+                <p class="routine">Review gym equipment, apparel, and accessories that can enhance workout experiences.
+                </p>
+            </div>
+
+            <div class="frame">
+                <div class="box">
+                    <img src="work5.jpg" alt="">
+                </div>
+                <div class="title">Martial Arts and Boxing</div>
+                <p class="routine">Classes and training sessions in martial arts, boxing, kickboxing, or MMA.</p>
+            </div>
+
+            <div class="frame">
+                <div class="box">
+                    <img src="work6.jpg" alt="">
+                </div>
+                <div class="title">CrossFit Area</div>
+                <p class="routine">A section specifically designed for CrossFit workouts, complete with equipment like
+                    kettlebells, ropes, and tires.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Section  -->
+
+    <section id="membership-plan" class="membership-sec view">
+        <div class="main">
+            <h2><span>M</span>embership</h2>
+            <h5>At our gym, we offer flexible membership options designed to meet your fitness needs and goals. Choose
+                the plan that works best for you and start your journey towards a healthier, fitter lifestyle today!
+            </h5>
+        </div>
+
+        <div class="content">
+            <div class="frame">
+                <div class="box">
+                    <h3> Yearly Membership: ₹14,000</h3><br>
+                    <p>Our best value plan! Enjoy 12 months of unlimited access to all our facilities and services. This
+                        membership includes:</p>
+                </div>
+                <div class="title">
+                    <ul>
+                        <li>Unlimited access to the gym and cardio areas.</li>
+                        <li>Personalized fitness assessment and training plan.</li>
+                        <li>Access to all group fitness classes.</li>
+                        <li> Use of spa room, personal lockers, and dressing rooms.</li>
+                        <li> Complimentary kitchen snacks and beverages.</li>
+                        <li> Free participation in workshops and special events.</li>
+                        <li>Exclusive discounts on personal training and merchandise.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="frame">
+                <div class="box">
+                    <h3> 6-Month Membership: ₹10,000</h3><br>
+                    <p>Perfect for those looking to make a significant commitment without the full year-long obligation.
+                        This membership includes:</p>
+                </div>
+                <div class="title">
+                    <ul>
+                        <li>Unlimited access to the gym and cardio areas.</li>
+                        <li>Personalized fitness assessment and training plan.</li>
+                        <li>Access to all group fitness classes.</li>
+                        <li> Use of spa room, personal lockers, and dressing rooms.</li>
+                        <li> Complimentary kitchen snacks and beverages.</li>
+                        <li> Free participation in workshops and special events.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="frame">
+                <div class="box">
+                    <h3>3-Month Membership: ₹7,000</h3><br>
+                    <p>Ideal for newcomers or those with short-term fitness goals. This membership includes:</p>
+                </div>
+                <div class="title">
+                    <ul>
+                        <li>Unlimited access to the gym and cardio areas.</li>
+                        <li>Personalized fitness assessment and training plan.</li>
+                        <li>Access to all group fitness classes.</li>
+                        <li> Use of spa room, personal lockers, and dressing rooms.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="membership-box">
+                <h5 class="membership">Sign up today and take the first step towards a healthier you! <br>Our friendly
+                    staff is here to help you choose the right membership plan and answer any questions you may have.
+                    Visit us at our gym or contact us at [phone number] or [email address] for more information.</h5>
+            </div>
+    </section>
+
+    <hr>
+    <!-- Trainer section  -->
+    <section id="trainer" class="trainer-sec view">
+        <div class="main">
+            <h2><span>B</span>est <span>T</span>rainer's</h2>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, incidunt!</h5>
+        </div>
+
+        <div class="content">
+
+            <div class="frame">
+                <div class="box">
+                    <img src="work2.jpg" alt="">
+                </div>
+                <div class="headline">
+                    <div class="title">Famous Person</div>
+                    <div class="icons">
+                        <a href="https://www.facebook.com/p/Peters-Gym-100064152069901/"> <i
+                                class="fa-brands fa-facebook"></i></a>
+
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+
+                    </div>
+                </div>
+                <p class="routine"> detailed guides on how to perform specific exercises correctly to avoid injuries and
+                    maximize benefits.</p>
+                <a href="#" class="explore">Explore</a>
+            </div>
+            <div class="frame">
+                <div class="box">
+                    <img src="work2.jpg" alt="">
+                </div>
+                <div class="headline">
+                    <div class="title">Famous Person</div>
+                    <div class="icons">
+                        <a href="https://www.facebook.com/p/Peters-Gym-100064152069901/"> <i
+                                class="fa-brands fa-facebook"></i></a>
+
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+
+                    </div>
+                </div>
+                <p class="routine"> detailed guides on how to perform specific exercises correctly to avoid injuries and
+                    maximize benefits.</p>
+                <a href="#" class="explore">Explore</a>
+            </div>
+            <div class="frame">
+                <div class="box">
+                    <img src="work2.jpg" alt="">
+                </div>
+                <div class="headline">
+                    <div class="title">Famous Person</div>
+                    <div class="icons">
+                        <a href="https://www.facebook.com/p/Peters-Gym-100064152069901/"> <i
+                                class="fa-brands fa-facebook"></i></a>
+
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+
+                    </div>
+                </div>
+                <p class="routine"> detailed guides on how to perform specific exercises correctly to avoid injuries and
+                    maximize benefits.</p>
+                <a href="#" class="explore">Explore</a>
+            </div>
+            <div class="frame">
+                <div class="box">
+                    <img src="work2.jpg" alt="">
+                </div>
+                <div class="headline">
+                    <div class="title">Famous Person</div>
+                    <div class="icons">
+                        <a href="https://www.facebook.com/p/Peters-Gym-100064152069901/"> <i
+                                class="fa-brands fa-facebook"></i></a>
+
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+
+                    </div>
+                </div>
+                <p class="routine"> detailed guides on how to perform specific exercises correctly to avoid injuries and
+                    maximize benefits.</p>
+                <a href="#" class="explore">Explore</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Diet  -->
+
+
+    <section id="diet" class="diet-sec view">
+        <div class="main">
+            <h2><span>S</span>pecial <span>D</span>iet</h2>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus officia nihil in!</h5>
+        </div>
+
+        <div class="content">
+            <div class="row">
+                <div class="col a">
+                    <div class="heading">Soya Chunks</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex facere debitis voluptates,
+                        praesentium voluptas nesciunt, quis accusamus minima quos, quas repudiandae impedit ad?
+                        Excepturi velit esse nemo est labore soluta consequuntur placeat? <br>Iste vel ipsum delectus
+                        officia eius impedit modi. Voluptatibus harum blanditiis dignissimos aspernatur.</p>
+                </div>
+                <div class="col b">
+                    <div class="boxes">
+                        <img src="soya.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col a">
+                    <div class="heading">Soya Chunks</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex facere debitis voluptates,
+                        praesentium voluptas nesciunt, quis accusamus minima quos, quas repudiandae impedit ad?
+                        Excepturi velit esse nemo est labore soluta consequuntur placeat? <br>Iste vel ipsum delectus
+                        officia eius impedit modi. Voluptatibus harum blanditiis dignissimos aspernatur.</p>
+                </div>
+                <div class="col b">
+                    <div class="boxes">
+                        <img src="soya.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col a">
+                    <div class="heading">Soya Chunks</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex facere debitis voluptates,
+                        praesentium voluptas nesciunt, quis accusamus minima quos, quas repudiandae impedit ad?
+                        Excepturi velit esse nemo est labore soluta consequuntur placeat? <br>Iste vel ipsum delectus
+                        officia eius impedit modi. Voluptatibus harum blanditiis dignissimos aspernatur.</p>
+                </div>
+                <div class="col b">
+                    <div class="boxes">
+                        <img src="soya.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col a">
+                    <div class="heading">Soya Chunks</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex facere debitis voluptates,
+                        praesentium voluptas nesciunt, quis accusamus minima quos, quas repudiandae impedit ad?
+                        Excepturi velit esse nemo est labore soluta consequuntur placeat? <br>Iste vel ipsum delectus
+                        officia eius impedit modi. Voluptatibus harum blanditiis dignissimos aspernatur.</p>
+                </div>
+                <div class="col b">
+                    <div class="boxes">
+                        <img src="soya.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col a">
+                    <div class="heading">Soya Chunks</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex facere debitis voluptates,
+                        praesentium voluptas nesciunt, quis accusamus minima quos, quas repudiandae impedit ad?
+                        Excepturi velit esse nemo est labore soluta consequuntur placeat? <br>Iste vel ipsum delectus
+                        officia eius impedit modi. Voluptatibus harum blanditiis dignissimos aspernatur.</p>
+                </div>
+                <div class="col b">
+                    <div class="boxes">
+                        <img src="soya.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col a">
+                    <div class="heading">Soya Chunks</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex facere debitis voluptates,
+                        praesentium voluptas nesciunt, quis accusamus minima quos, quas repudiandae impedit ad?
+                        Excepturi velit esse nemo est labore soluta consequuntur placeat? <br>Iste vel ipsum delectus
+                        officia eius impedit modi. Voluptatibus harum blanditiis dignissimos aspernatur.</p>
+                </div>
+                <div class="col b">
+                    <div class="boxes">
+                        <img src="soya.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section  -->
+
+    <!-- Contact Section -->
+<section id="contact" class="contact-sec view">
+    <div class="main">
+        <h2><span>C</span>ontact <span>U</span>s</h2>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus officia nihil in!</h5>
+    </div>
+
+    <div class="content">
+        <!-- Registration Form -->
+        <div class="form-container" id="register">
+            <h2>Register Now</h2>
+            <form id="registerForm" method="POST" autocomplete="off">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required autocomplete="off">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required autocomplete="off">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required autocomplete="off">
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required autocomplete="off">
+                
+                <label for="membership">Membership Plan:</label>
+                <select id="membership" name="membership" >
+                    <option value="" disabled selected hidden>Select Membership</option>
+                    <option value="yearly">Yearly - ₹14,000</option>
+                    <option value="6-months">6 Months - ₹10,000</option>
+                    <option value="3-months">3 Months - ₹7,000</option>
+                </select>
+
+
+                
+                <label for="message">Message (optional):</label>
+                <textarea id="message" name="message" autocomplete="off"></textarea>
+                
+                <div class="radio">
+                    <h3>Gender:</h3><br>
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female" required>
+                    <label for="female">Female</label><br>
+                </div>
+                
+                <button type="submit">Register Now</button>
+            </form>
+        </div>
+
+        <!-- Login Form -->
+        <div class="form-container" id="login">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" name="email" required>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="main">
+        <h2><span>F</span>ind <span>U</span>s <span>H</span>ere</h2>
+        <h5>We are located in the heart of the city, making it convenient for you to visit us and enjoy our
+            top-notch facilities. Use the map below to find our exact location and get directions. We look forward
+            to welcoming you to our gym!</h5>
+    </div>
+    <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.7478452075475!2d79.92396051100528!3d23.142890311740032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981ad4826038095%3A0xf295267e2106a7e4!2sPeters%20gym!5e0!3m2!1sen!2sin!4v1722151906410!5m2!1sen!2sin"
+            width="90%" height="450" style="border:2px solid black;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+            
+        </div>
+        <div class="main">
+            <h2><span>F</span>ind <span>U</span>s <span>H</span>ere</h2>
+            <h5>We are located in the heart of the city, making it convenient for you to visit us and enjoy our
+                top-notch facilities. Use the map below to find our exact location and get directions. We look forward
+                to welcoming you to our gym!</h5>
+        </div>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.7478452075475!2d79.92396051100528!3d23.142890311740032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981ad4826038095%3A0xf295267e2106a7e4!2sPeters%20gym!5e0!3m2!1sen!2sin!4v1722151906410!5m2!1sen!2sin"
+                width="90%" height="450" style="border:2px solid black;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+<br>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section footer-about">
+                    <h2>Peter's Gym</h2>
+                    <p>Your fitness journey starts here. Join us and transform your body & mind.</p>
+                </div>
+    
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#service">Services</a></li>
+                        <li><a href="#membership">Membership</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="/gallery">Gallery</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-section footer-contact">
+                    <h2>Contact Us</h2>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Gym Street, Fitness City</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-envelope"></i> contact@petersgym.com</p>
+                </div>
+    
+                <div class="footer-section social icon">
+                    <h2>Follow Us</h2>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+    
+            <div class="footer-bottom">
+                <p>&copy; 2024 Peter's Gym | All Rights Reserved</p>
+            </div>
+        </div>
+    
+        <!-- Scroll to Top Button -->
+        <button id="scrollToTop" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></button>
+    </footer>
+    
+    <script src="./script.js"></script>
+</body>
+
+</html>

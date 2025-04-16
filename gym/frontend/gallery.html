@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website - Gallery</title>
+    <link rel="stylesheet" href="/frontend/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    .navbar {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .navbar-brand {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .navbar-menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 20px;
+    }
+    
+    .navbar-menu li {
+        display: inline;
+    }
+    
+    .navbar-menu a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 15px;
+        transition: background 0.3s;
+    }
+    
+    .navbar-menu a:hover {
+        background-color: #575757;
+        border-radius: 5px;
+    }
+    
+    .gallery-container {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 0 20px;
+    }
+    
+    .gallery-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    #searchInput {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
+    
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+    
+    .gallery-item img {
+        width: 100%;
+        height: 300px;
+        display: block;
+        transition: transform 0.3s ease;
+    }
+    
+    .gallery-item:hover {
+        transform: scale(1.05);
+    }
+    
+    .gallery-item:hover img {
+        transform: scale(1.1);
+    }
+    
+    .gallery-item p {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .back-button {
+        grid-column: span 3;
+        text-align: center;
+        margin-bottom: 20px;
+        cursor: pointer;
+        font-size: 18px;
+        color: #007bff;
+    }
+    
+    .back-button:hover {
+        text-decoration: underline;
+    }
+    
+    /* Optional: Lightbox styling if you add a lightbox script */
+    
+</style>
+<body>
+   
+
+    <div class="gallery-container">
+        <h2>Gallery</h2>
+        <input type="text" id="searchInput" placeholder="Search for images...">
+        <div class="gallery" id="folders">
+            <div class="gallery-item" onclick="showImages('stretching')">
+                <img src="work2.jpg" alt="Stretching Room">
+                <p>Stretching Room</p>
+            </div>
+            <div class="gallery-item" onclick="showImages('kitchen')">
+                <img src="soya.webp" alt="Kitchen">
+                <p>Kitchen</p>
+            </div>
+            <div class="gallery-item" onclick="showImages('gym')">
+                <img src="https://via.placeholder.com/300?text=Gym" alt="Gym">
+                <p>Gym</p>
+            </div>
+            <div class="gallery-item" onclick="showImages('equipment')">
+                <img src="https://via.placeholder.com/300?text=Equipment" alt="Equipment">
+                <p>Equipment</p>
+            </div>
+            <div class="gallery-item" onclick="showImages('spa')">
+                <img src="https://via.placeholder.com/300?text=Spa+Room" alt="Spa Room">
+                <p>Spa Room</p>
+            </div>
+            <div class="gallery-item" onclick="showImages('locker')">
+                <img src="https://via.placeholder.com/300?text=Personal+Locker" alt="Personal Locker">
+                <p>Personal Locker</p>
+            </div>
+        </div>
+        
+        <div class="gallery" id="stretching" style="display: grid;">
+            <div class="back-button" onclick="showFolders()">Back to Folders</div>
+            <div class="gallery-item">
+                <a href="work5.jpg" data-lightbox="stretching" data-title="Stretching 1">
+                    <img src="gow.jpg" alt="Stretching 1">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="work1.jpg" data-lightbox="stretching" data-title="Stretching 2">
+                    <img src="work1.jpg" alt="Stretching 2">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="work2.jpg" data-lightbox="stretching" data-title="Stretching 3">
+                    <img src="work2.jpg" alt="Stretching 3">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="work3.jpg" data-lightbox="stretching" data-title="Stretching 4">
+                    <img src="work3.jpg" alt="Stretching 4">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="logo.jpg" data-lightbox="stretching" data-title="Stretching 5">
+                    <img src="logo.jpg" alt="Stretching 5">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="work4jpg" data-lightbox="stretching" data-title="Stretching 6">
+                    <img src="work4.jpg" alt="Stretching 6">
+                </a>
+            </div>
+        </div>
+        
+        <!-- Repeat similar divs for other categories: kitchen, gym, equipment, spa, locker -->
+        
+        <div class="gallery" id="kitchen" style="display: none;">
+            <div class="back-button" onclick="showFolders()">Back to Folders</div>
+            <div class="gallery-item">
+                <a href="https://via.placeholder.com/1200?text=Kitchen+1" data-lightbox="kitchen" data-title="Kitchen 1">
+                    <img src="https://via.placeholder.com/300?text=Kitchen+1" alt="Kitchen 1">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="https://via.placeholder.com/1200?text=Kitchen+2" data-lightbox="kitchen" data-title="Kitchen 2">
+                    <img src="https://via.placeholder.com/300?text=Kitchen+2" alt="Kitchen 2">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+    <script>
+        function showImages(folderId) {
+            document.getElementById('folders').style.display = 'none';
+            document.getElementById(folderId).style.display = 'grid';
+        }
+
+        function showFolders() {
+            document.getElementById('folders').style.display = 'grid';
+            document.querySelectorAll('.gallery').forEach(function(gallery) {
+                if (gallery.id !== 'folders') {
+                    gallery.style.display = 'none';
+                }
+            });
+        }
+
+      /*  document.getElementById('searchInput').addEventListener('input', function() {
+            const searchValue = this.value.toLowerCase();
+            document.querySelectorAll('.gallery-item').forEach(function(item) {
+                const text = item.innerText.toLowerCase();
+                item.style.display = text.includes(searchValue) ? 'block' : 'none';
+            });
+        }); */
+
+        document.getElementById('searchInput').addEventListener('input', function () {
+            const searchValue = this.value.toLowerCase();
+            const allGalleries = document.querySelectorAll('.gallery');
+        
+            let found = false;
+        
+            allGalleries.forEach(gallery => {
+                gallery.style.display = 'none'; // Hide all galleries initially
+                gallery.querySelectorAll('.gallery-item').forEach(item => {
+                    const text = item.innerText.toLowerCase();
+                    if (text.includes(searchValue)) {
+                        item.style.display = 'block';
+                        gallery.style.display = 'grid'; // Show only galleries that have matching images
+                        found = true;
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        
+            // Show "folders" section if search is empty
+            if (searchValue === '') {
+                document.getElementById('folders').style.display = 'grid';
+            } else if (!found) {
+                document.getElementById('folders').style.display = 'none';
+            }
+        });
+        
+    </script>
+</body>
+</html>
